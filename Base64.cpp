@@ -8,10 +8,10 @@
 using namespace std;
 int shift = 0;
 char a;
-int bc[1000];
+int bc[10000];
 int main()
 {
-    ifstream inp("inp.txt");
+    ifstream inp("input.txt");
     int arr[8]{};
         //int bc[1000];
         int  ost, i;
@@ -58,11 +58,11 @@ int main()
                 boof[i-1] = bc[shetchic];
                 if (i % 6==0) {
                     int bfnum;
-                    bfnum = boof[3] * 1;
-                    bfnum += boof[2] * 2;
-                    bfnum += boof[1] * 4;
-                    bfnum += boof[0] * 8;
-                    bfnum += boof[0] * 16;
+                    bfnum = boof[5] * 1;
+                    bfnum += boof[4] * 2;
+                    bfnum += boof[3] * 4;
+                    bfnum += boof[2] * 8;
+                    bfnum += boof[1] * 16;
                     bfnum += boof[0] * 32;
                     a= table(bfnum);
                     output << a;
@@ -78,6 +78,9 @@ int main()
                 i++;
             }
             shetchic++;
+        }
+        for (int i = 0; i < ost/2; i++) {
+            output << "=";
         }
 }
 
