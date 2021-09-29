@@ -12,7 +12,7 @@ int bc[10000];
 int main()
 {
     ifstream inp("input.txt");
-    int arr[8]{};
+        int arr[8]{};
         //int bc[1000];
         int  ost, i;
         int j = 0;
